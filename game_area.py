@@ -1,0 +1,22 @@
+import turtle
+def area():
+    game_area = turtle.Turtle()
+    game_area.color('white')
+    game_area.penup()
+    game_area.goto(0, 495)
+    game_area.pensize(20)
+    game_area.pendown()
+    game_area.goto(370, 495)
+    game_area.goto(370, -490)
+    game_area.goto(-370, -490)
+    game_area.goto(-370, 495)
+    game_area.goto(0, 495)
+    game_area.hideturtle()
+
+    instruction = turtle.Turtle()
+    instruction.penup()
+    instruction.color('black')
+    instruction.goto(0, 485)
+    instruction.pendown()
+    instruction.write('Space = Shoot, ← = Move Left, → = Move Right', move=False, align='center', font=('Arial', 10, 'normal'))
+    instruction.hideturtle()
